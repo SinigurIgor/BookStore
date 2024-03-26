@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--===================== BOXICONS =====================-->
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+    <!--===================== SWIPER CSS =====================-->
+    <link rel="stylesheet" href="~/Content/css/swiper-bundle.min.css" />
+
+    <!--===================== CSS =====================-->
+    <link rel="stylesheet" href="~/Content/css/style.css" />
+    <link rel="stylesheet" href="~/Content/css/color-1.css" />
+
+    <title>Reader's Nook</title>
+</head>
+<body>
+
+    <!--===================== HEADER =====================-->
+    <header class="header" id="header">
+        @Html.Partial("_Header")
+    </header>
+
+    <!--===================== CART =====================-->
+    <div class="cart show" id="cart">
+        @Html.Partial("_Cart")
+    </div>
+
+    <!--===================== LOGIN =====================-->
+    <div class="login" id="login">
+        @Html.Partial("_Login")
+    </div>
+
+    <!--===================== SWIPER JS =====================-->
+    <script src="~/Content/js/swiper-bundle.min.js"></script>
+
+    <!--===================== JS =====================-->
+    <script src="~/Content/js/main.js"></script>
+
+
+    <!--===================== MAIN =====================-->
+    <main class="main">
+        <!--===================== HOME =====================-->
+        <section class="home container">
+            @Html.Partial("_Home")
+        </section>
+    </main>
+
+    @RenderBody()
+</body>
+</html>
